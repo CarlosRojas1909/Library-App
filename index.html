@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+
+            <div class="container">
+  
+                    <h2>Library App<small>T1CG</small></h2>
+                    
+                    <form class="form-input">
+                      
+                      <div class="group">      
+                        <input id="input__title" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Title</label>
+                      </div>
+                        
+                      <div class="group">      
+                        <input id="input__author" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Author</label>
+                      </div>
+
+                      <div class="group">      
+                        <input id="input__published" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Year Published</label>
+                      </div>
+                       
+                    </form>
+
+                    
+                    <div class="radioButtons">
+                        <input type="radio" name="checkbox" value="one" id="radio-one" class="form-radio">
+                        <label for="radio-one" class="radioLabel">Read</label>
+                    </div>
+                    <div class="radioButtons">
+                        <input type="radio" name="checkbox" value="two" id="radio-two" class="form-radio">
+                        <label for="radio-two" class="radioLabel">Unread</label>
+                    </div>
+                                         
+            </div>
+            <div class="button">
+                <a onclick="addBook()" href="#" class="button__input">Add Book</a>
+                <a onclick="updateArr()" href="#" class="button__input">Update DataBase</a>
+                <a onclick="bookStatus()" href="#" class="button__input">Book Status</a>
+            </div>
+
+            <div class="titlesTotal">
+                <h2 class="h2Title">All Books</h2>
+                <h2 class="h2Title">Read Books</h2>
+                <h2 class="h2Title">Unread Books</h2>
+            </div>
+
+            <div class="allLists">
+
+                <ul id="allbooks" class="display__list">
+                    <!-- injecting list here -->
+                </ul>
+      
+                <ul id="read" class="display__list">
+                    <!-- injecting list here -->
+                    <!-- <h2 id="readbookTitle" >Read Books</h2> -->
+                </ul>
+                
+                <ul id="unread" class="display__list ">
+                    <!-- injecting list here -->
+                    <!-- <h2 id="unreadbookTitle">Unread Books</h2> -->
+                </ul>
+      
+            </div>
+            
+            
+    </main>
+        
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+  
